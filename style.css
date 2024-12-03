@@ -1,0 +1,154 @@
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #e8f0ff, #f4f4f4);
+}
+
+.editor-container {
+  text-align: center;
+  width: 60%;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+.controls {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.canvas {
+  width: 100%;
+  min-height: 400px;
+  background: linear-gradient(135deg, #ffffff, #f0faff);
+  position: relative;
+  margin-bottom: 20px;
+  border: 2px dashed #3c91b3;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-element {
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  cursor: move;
+  color: #333;
+}
+
+button,
+select {
+  padding: 10px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover,
+select:hover {
+  transform: scale(1.05);
+}
+
+.controls button {
+  background: linear-gradient(135deg, #3c91b3, #367ba5);
+  color: white;
+  font-weight: bold;
+}
+
+.controls button:active {
+  background: #2e6b8c;
+  transform: scale(1);
+}
+
+.controls select {
+  background: #fff;
+  color: #333;
+  font-weight: bold;
+  border: 2px solid #3c91b3;
+}
+
+.button-with-img {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 10px;
+  background: linear-gradient(135deg, #367ba5, #3c91b3);
+  color: white;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.button-with-img:hover {
+  transform: scale(1.1);
+}
+
+.button-with-img img {
+  width: 20px;
+  height: 20px;
+}
+
+.font-size-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px 15px;
+  border: 2px solid #3c91b3;
+  border-radius: 12px;
+  background: #f8fcff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.font-size-controls button {
+  background: #3c91b3;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.font-size-controls button:hover {
+  background: #2e6b8c;
+}
+
+#fontSizeDisplay {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  background: #e6f7ff;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+button:focus,
+select:focus {
+  outline: 2px solid #3c91b3;
+}
+
+#fontSelector {
+  border-radius: 8px;
+  padding: 10px;
+  background: #fff;
+  color: #333;
+  border: 2px solid #3c91b3;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+#fontSelector:focus {
+  box-shadow: 0 0 8px #3c91b3;
+}
